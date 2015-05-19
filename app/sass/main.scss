@@ -143,11 +143,16 @@ Banner
 		position: absolute;
 		top: 0;
 		left: 0;
-		width: 33.333%;
+		width: 45%;
 		max-width: rem(300);
 		height: 100%;
 		background: rgba(242, 103, 34, 0.75);
 		padding: rem(15) rem(20);
+	}
+	@include media($lg-screen) {
+		width: 33.333%;
+
+
 	}
 	> h2 {
 		color: $orange;

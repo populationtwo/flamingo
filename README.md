@@ -18,3 +18,5 @@ Desired outcome can be seen at https://github.com/cornifex/gagglecsstest/wiki/Sc
 
 Run `npm install` and `bower install`.
 Run `grunt` for building and `grunt serve` for preview.
+
+[Demo](http://populationtwo.github.io/flamingo/app/) 

@@ -6,11 +6,8 @@
         <meta name="author" content="Edwin Lunandy">
         <meta name="description" content="Gaggle FED test.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Flamingo</title>
-        
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-        <link rel="shortcut icon" href="/favicon.ico">
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+		<title>Gaggle CSS Test</title>
+
         <!-- build:css styles/vendor.css -->
         <!-- bower:css -->
         <link rel="stylesheet" href="../bower_components/normalize-css/normalize.css">
@@ -22,56 +19,114 @@
         <!-- build:js scripts/vendor/modernizr.js -->
         <script src="../bower_components/modernizr/modernizr.js"></script>
         <!-- endbuild -->
-        
+
     </head>
     <body>
         <!--[if lt IE 10]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
+		<div class="page">
+			<section id="header">
+				<div class="container">
+					<div id="branding">
+						<img id="logo" src="images/logo.png" />
+					</div>
+				</div>
 
-        <div class="container">
-            <div class="header">
-                <a href="404.html">404 Page</a>
-            </div><!-- .header -->
+				<div id="navigation">
+					<a id="menu-toggle" href="#">Menu</a>
 
-            <div class="main">
-                <h1>Congratulations!</h1>
-                <p>The <code>bourbon-neat</code> generator has given you...</p>
-                <h3><a href="https://html5boilerplate.com/" title="The web’s most popular front-end template" target="_blank">HTML5 Boilerplate</a></h3>
-                <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
+					<div class="container">
+						<ul id="main-menu">
+							<li>
+								<a href="#">Home</a>
+							</li>
+							<li>
+								<a href="#">Teachers</a>
+							</li>
+							<li>
+								<a href="#">Students</a>
+							</li>
+							<li>
+								<a href="#">Assesments</a>
+							</li>
+							<li>
+								<a href="#">Tools</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
 
-                <h3><a href="http://sass-lang.com/" title="CSS with superpowers" target="_blank">Sass</a></h3>
-                <p>Sass is a mature, stable, and powerful professional grade CSS extension language.</p>
+			<section id="main">
+				<div class="container">
+					<div id="banner">
+						<img src="images/header.jpg" />
 
-                <h3><a href="http://bourbon.io/" title="thoughtbot: Bourbon Saas mixin library" target="_blank">Bourbon</a></h3>
-                <p>A simple and lightweight mixin library for Sass.</p>
+						<div class="banner-content">
+							<h2>Safety First</h2>
 
-                <h3><a href="http://neat.bourbon.io/" title="thoughtbot: Neat responsive grid" target="_blank">Neat</a></h3>
-                <p>Sleek, intuitive, and powerful mobile first front-end framework (Grid) for faster and easier web development.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc magna quam, semper a nibh
+								in,
+								consequat vestibulum ex. Nam cursus ultricies mi sit amet auctor. Sed non nunc mattis,
+								sodales
+								ante a, luctus nibh.</p>
+						</div>
+					</div>
 
-                <h3><a href="http://necolas.github.io/normalize.css/" title="Normalize CSS" target="_blank">Normalize.css</a></h3>
-                <p>A modern, HTML5-ready alternative to CSS resets. Makes browsers render all elements more consistently and in line with modern standards.</p>
-                
+					<div id="content">
+						<h2>Learning Management</h2>
 
-                <h3><a href="http://modernizr.com/" title="Modernizr js" target="_blank">Modernizr.js</a></h3>
-                <p>Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.</p>
-                
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc magna quam, semper a nibh in,
+							consequat vestibulum ex. Nam cursus ultricies mi sit amet auctor. Sed non nunc mattis,
+							sodales ante
+							a, luctus nibh. Donec porta eros faucibus eros tempus lacinia. Nullam justo turpis, porta ac
+							commodo
+							ut, malesuada ut neque. Aenean vitae bibendum mi, eu tempus felis. Proin ipsum purus,
+							laoreet egestas
+							felis ut, fringilla auctor arcu. Sed non nunc sed libero laoreet maximus a ut justo.
+							Vestibulum dapibus
+							gravida aliquet. Duis ligula massa, pretium ut ligula quis, elementum malesuada tellus.
+							Donec et leo
+							congue, faucibus nibh eget, lobortis arcu. Pellentesque viverra sapien ut efficitur rutrum.
+							Etiam
+							tincidunt ornare eleifend. Integer blandit rhoncus justo, sagittis porttitor nulla fermentum
+							sed.</p>
+					</div>
+					<div id="sidebar">
+						<div id="news">
+							<h2>News</h2>
 
-                <p>Happy coding!</p>
-            </div><!-- .main -->
-            
-        </div><!-- .container -->
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc magna quam, semper a nibh
+								in,
+								consequat vestibulum ex. Nam cursus ultricies mi sit amet auctor. Sed non nunc mattis,
+								sodales
+								ante a, luctus nibh.</p>
+							<a href="#">Read More ></a>
+						</div>
+					</div>
 
-        <div class="footer">
-            Brought to you by the brilliant people at <a href="http://koolth.com.au">koolth</a>
-        </div><!-- .footer -->
+				</div>
+			</section>
 
-        <!-- build:js scripts/vendor.js -->
+			<section id="footer">
+				<div class="container">
+					<p>&copy; Gaggle, 2015</p>
+				</div>
+			</section>
+		</div>
+
+
+		<!-- build:js scripts/vendor.js -->
         <!-- bower:js -->
         <script src="../bower_components/jquery/dist/jquery.js"></script>
         <!-- endbower -->
         <!-- endbuild -->
+
+		<!-- build:js scripts/main.js -->
+		<script src="scripts/script.js"></script>
+		<!-- endbuild -->
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

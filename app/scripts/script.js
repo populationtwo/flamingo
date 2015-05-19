@@ -1,3 +1,5 @@
+'use strict';
+
 (function($) {
 	$(function() {
 		var $toggleText = $('#menu-toggle').text();

@@ -5,57 +5,102 @@
 
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
 
-$linkColor: #4183C4;
-$hoverColor: lighten($linkColor, 10);
-$borderColor: #b3b3b3;
+
+$orange: #F26722;
+$blue: #263692;
+$gray: #666666;
+$gray-light: #eeeeee;
 
 body {
-	@include outer-container; 
-	font-family: $helvetica;
-	background-color: #f0f0f0;
+	font-family: 'Lato', $helvetica;
+	background-color: #FFF;
 }
-.container {
-	@include span-columns(8);
-	@include shift(2);
-	@include margin(25px null 25px null);
-	padding: 20px;
-	@include border-top-radius(5px);
-	@include border-bottom-radius(5px);
-	border: 1px solid $borderColor;
-	box-shadow: 0 1px 10px #a7a7a7, inset 0 1px 0 #fff;
-	background-color: white;
-	.main {
-		margin-bottom: 25px;
+a {
+	color: $orange;
+	text-decoration: none;
+	&:hover {
+		color: darken($orange, 10%);
 	}
 }
-.header {
-	@include span-columns(3);
-	@include shift(9);
-	text-align: right;
+h2 { font-size: rem(32);
+	font-weight: 400;
+	margin: 0;
 }
-.footer {
-	@include span-columns(12);
-	padding: 10px;
-	font-size: em(14);
-	color: grey;
+img {
+	width: 100%;
+	max-width: 100%;
+}
+
+.container {
+	@include outer-container();
+//	@include span-columns(8);
+//	@include shift(2);
+//	@include margin(25px null 25px null);
+//	padding: 20px;
+//	@include border-top-radius(5px);
+//	@include border-bottom-radius(5px);
+//	border: 1px solid #000;
+//	box-shadow: 0 1px 10px #a7a7a7, inset 0 1px 0 #fff;
+//	background-color: white;
+//	.main {
+//		margin-bottom: 25px;
+//	}
+}
+
+
+#branding {
+	width: 80%;
+	max-width: rem(350);
+	margin: 0 auto;
+}
+
+
+#navigation {
+	background: $blue;
 	text-align: center;
-	a {
-		color: #0081C6;
-		&:hover {
-			color: $hoverColor;	
+	a {color: white;
+		&:hover, &:focus {
+			background: $orange;
 		}
 	}
 }
-a {
-	color: $linkColor;
-	text-decoration: none;
-	&:hover {
-		color: $hoverColor;
+
+#main {
+	.container {
+		padding: 0 rem(20);
+	}
+	p {
+		color: $gray;
+	}
+	h2 {
+		color: $orange;
 	}
 }
-h3 {
-	margin-bottom: 0;
+
+#sidebar {
+	margin-bottom: rem(20);
 }
-p {
-	margin-top: 5px;
+#news {
+	@include clearfix;
+
+	background: $blue;
+	color: white;
+	padding: rem(10);
+	.more {
+		float: right;
+	}
+	h2,p {
+		color: white;
+	}
+
+}
+
+#footer {
+	background: $gray;
+	color: white;
+	text-align: center;
+	padding: rem(8) 0 rem(7);
+	p {
+		font-size: rem(14);
+	}
 }
